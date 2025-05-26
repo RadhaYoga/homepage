@@ -1,15 +1,37 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <title>Radha Srinivasan Yoga Practioner Homepage</title>
-   </head>
-   <body>
-      <h1>Welcome to Radha Srinivasan - Yoga Practitioner's Homepage! ⭐️</h1>
-      <p>How was your day? 🎉</p>
-      <!--
-      <img src="WhatsApp Image 2025-05-10 at 21.30.35.jpeg" alt="A cool image" width="300">
-      style="width: 50%; height: 150px; display: block; margin: 0 auto;"
-      -->
-      <img src="Homepage-brochure.jpeg" alt="Details about my classes" width="500">
-   </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Full-Screen Image</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            background-color: teal;
+            height: 100%;
+            width: 100%;
+            overflow: hidden; /* Prevent scrolling */
+        }
+        .full-screen-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            object-fit: contain; /* Ensures image covers the full screen */
+        }
+
+        /* Optimize for mobile screens */
+        @media (max-width: 768px) {
+            .full-screen-image {
+                object-fit: contain; /* Prevents excessive cropping */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img src="Radha-homepage.png" alt="Details about my classes" class="full-screen-image">
+</body>
 </html>
