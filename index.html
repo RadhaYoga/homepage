@@ -19,13 +19,13 @@
             left: 0;
             width: 100vw;
             height: 100vh;
-            object-fit: cover; /* Ensures image covers the full screen */
+            object-fit: contain; /* Ensures image covers the full screen */
         }
 
         /* Optimize for mobile screens */
         @media (max-width: 768px) {
             .full-screen-image {
-                object-fit: cover; /* Prevents excessive cropping */
+                object-fit: contain; /* Prevents excessive cropping */
             }
         }
     </style>
