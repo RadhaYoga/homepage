@@ -1,1 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radha Srinivasan - Yoga Trainer</title>
+    <!-- Use a simple, clean font like Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .fade-in {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .bg-pattern {
+            background-image: url('https://placehold.co/1920x1080/FFF3E0/5C4033?text=Yoga+Background');
+            background-position: center;
+            background-size: cover;
+        }
+
+        .scroll-smooth {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 scroll-smooth">
+
+    <!-- Hero Section -->
+    <header id="home" class="relative overflow-hidden bg-gradient-to-br from-orange-400 via-red-500 to-yellow-500 text-white shadow-xl">
+        <div class="absolute inset-0 z-0 opacity-20">
+            <!-- Warm, subtle background pattern -->
+            <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                    <radialGradient id="grad1" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" style="stop-color:rgba(255, 255, 255, 0.1)" />
+                        <stop offset="100%" style="stop-color:rgba(255, 255, 255, 0)" />
+                    </radialGradient>
+                    <radialGradient id="grad2" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" style="stop-color:rgba(255, 255, 255, 0.15)" />
+                        <stop offset="100%" style="stop-color:rgba(255, 255, 255, 0)" />
+                    </radialGradient>
+                </defs>
+                <circle cx="20" cy="80" r="10" fill="url(#grad1)" />
+                <circle cx="80" cy="30" r="15" fill="url(#grad2)" />
+                <circle cx="50" cy="50" r="20" fill="url(#grad1)" />
+            </svg>
+        </div>
+        <div class="container mx-auto px-4 py-20 md:py-32 relative z-10 flex flex-col md:flex-row items-center justify-center fade-in">
+            <div class="text-center md:text-left md:pr-12 mb-8 md:mb-0">
+                <h1 class="text-5xl md:text-6xl font-extrabold leading-tight tracking-tight mb-4">
+                    Radha Srinivasan
+                </h1>
+                <p class="text-2xl md:text-3xl font-light mb-6">
+                    A Journey of Wellness
+                </p>
+                <a href="#contact" class="bg-white text-orange-600 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-orange-100 transition duration-300 transform hover:scale-105 inline-block">
+                    Opt in for a Demo Class
+                </a>
+            </div>
+            <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-2xl border-4 border-white transform rotate-3 hover:rotate-0 transition duration-500">
+                <img src="Radha LinkedIn pic.jpeg" alt="Radha Srinivasan" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-50 bg-white shadow-lg py-4 transition-all duration-300 transform-gpu translate-y-0">
+        <div class="container mx-auto px-4 flex justify-center space-x-6 md:space-x-12">
+            <a href="#about" class="text-gray-600 hover:text-orange-500 font-medium transition-colors duration-200">About</a>
+            <a href="#offerings" class="text-gray-600 hover:text-orange-500 font-medium transition-colors duration-200">Offerings</a>
+            <a href="#schedule" class="text-gray-600 hover:text-orange-500 font-medium transition-colors duration-200">Schedule</a>
+            <a href="#testimonials" class="text-gray-600 hover:text-orange-500 font-medium transition-colors duration-200">Testimonials</a>
+            <a href="#contact" class="text-gray-600 hover:text-orange-500 font-medium transition-colors duration-200">Contact</a>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-24 bg-gradient-to-br from-yellow-50 to-orange-100 fade-in">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-orange-600 mb-2">About Radha's Philosophy</h2>
+                <p class="text-xl text-gray-600">The journey inward, to a state of balance</p>
+            </div>
+            <div class="flex flex-col md:flex-row items-center md:items-start space-y-12 md:space-y-0 md:space-x-16">
+                <div class="w-full md:w-1/2">
+                    <p class="text-lg md:text-xl leading-relaxed text-gray-700 mb-6">
+                        Radha's approach to yoga is holistic and deeply transformative. She is cherished by her students for her compassionate teaching and for instilling a deeper understanding of yogic philosophies that go beyond physical practice. Her philosophy is rooted in several core beliefs:
+                    </p>
+                    <ul class="list-none space-y-4 text-lg text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-orange-500 text-2xl mr-3">🧘</span>
+                            <div>
+                                <strong class="text-gray-800">The Eight Limbs of Yoga:</strong> Her outlook is deeply inclined toward the "Eight Limbs of Yoga" from Patanjali. She teaches that yoga is an inward journey that brings immense satisfaction and a state of balance on physical, mental, and emotional levels.
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-orange-500 text-2xl mr-3">🧠</span>
+                            <div>
+                                <strong class="text-gray-800">Mastering the Mind over Matter:</strong> Radha believes that mastering the mind can lead to self-conviction. Her classes weave in meditation techniques, applying ancient wisdom in a useful and understandable way.
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-orange-500 text-2xl mr-3">💡</span>
+                            <div>
+                                <strong class="text-gray-800">First Principles Thinking:</strong> Her classes are simple and relatable, aligning with the core Patanjali system. She uses simple props found at home, promoting a sustainable and fundamental approach to fitness.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full md:w-1/2 flex justify-center">
+                    <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-2xl border-4 border-white transform -rotate-3 hover:rotate-0 transition duration-500">
+                        <img src="Radha Srinivasan.jpg" alt="Radha's Philosophy" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offerings Section -->
+    <section id="offerings" class="py-16 md:py-24 bg-white fade-in">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-red-600 mb-2">Innovative Techniques and Offerings</h2>
+                <p class="text-xl text-gray-600">Making every session joyful and welcoming</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Card 1: Creative Program Designs -->
+                <div class="bg-yellow-50 p-8 rounded-2xl shadow-lg border border-yellow-200 hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
+                    <div class="flex items-center justify-center mb-4">
+                        <img src="https://placehold.co/100x100/FFF8DC/FFD700?text=Creativity" alt="Creativity Icon" class="w-24 h-24 rounded-full border-4 border-yellow-300">
+                    </div>
+                    <h3 class="text-2xl font-semibold text-center text-yellow-800 mb-3">Creative Program Designs</h3>
+                    <p class="text-gray-700 text-center">
+                        Radha designs classes around fun themes like "Yoga with Props," "Facial Yoga," and "Aqua Yoga". She also integrates flute music and mantras to set the tone and pace of sessions.
+                    </p>
+                </div>
+                <!-- Card 2: Personalized & Group Routines -->
+                <div class="bg-red-50 p-8 rounded-2xl shadow-lg border border-red-200 hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
+                    <div class="flex items-center justify-center mb-4">
+                        <img src="https://placehold.co/100x100/FFCCCC/FF0000?text=Personalized" alt="Personalization Icon" class="w-24 h-24 rounded-full border-4 border-red-300">
+                    </div>
+                    <h3 class="text-2xl font-semibold text-center text-red-800 mb-3">Personalized & Group Routines</h3>
+                    <p class="text-gray-700 text-center">
+                        She provides personalized attention in both group and private sessions. She tailors modifications to accommodate different skill levels and physical conditions.
+                    </p>
+                </div>
+                <!-- Card 3: Gamification of Fitness -->
+                <div class="bg-orange-50 p-8 rounded-2xl shadow-lg border border-orange-200 hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
+                    <div class="flex items-center justify-center mb-4">
+                        <img src="https://placehold.co/100x100/FFE0B2/FF8C00?text=Gamification" alt="Gamification Icon" class="w-24 h-24 rounded-full border-4 border-orange-300">
+                    </div>
+                    <h3 class="text-2xl font-semibold text-center text-orange-800 mb-3">Gamification of Fitness</h3>
+                    <p class="text-gray-700 text-center">
+                        Radha incorporates fun challenges, like holding a plank or mastering a specific pose, to motivate her students. Her goal is to keep the sessions engaging and fun.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="py-16 md:py-24 bg-gradient-to-br from-red-100 to-yellow-200 fade-in">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-orange-600 mb-2">Class Schedule</h2>
+                <p class="text-xl text-gray-600">Find the perfect time to start your journey</p>
+            </div>
+            <div class="max-w-3xl mx-auto bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">On-going classes:</h3>
+                <div class="overflow-x-auto mb-8">
+                    <table class="w-full text-left">
+                        <thead>
+                            <tr class="bg-yellow-50">
+                                <th class="py-3 px-4 font-bold text-yellow-800 rounded-tl-lg">Days</th>
+                                <th class="py-3 px-4 font-bold text-yellow-800">Time (IST)</th>
+                                <th class="py-3 px-4 font-bold text-yellow-800 rounded-tr-lg">Class Type</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-3 px-4 border-b border-gray-200">Mon-Wed-Friday</td>
+                                <td class="py-3 px-4 border-b border-gray-200">5:30 - 6:30 am</td>
+                                <td class="py-3 px-4 border-b border-gray-200">Yoga class</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 border-b border-gray-200 bg-gray-50">Mon-Tue-Wed-Thu-Fri</td>
+                                <td class="py-3 px-4 border-b border-gray-200 bg-gray-50">9:30 am - 10:30 am</td>
+                                <td class="py-3 px-4 border-b border-gray-200 bg-gray-50">Mixed format class*</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 border-b border-gray-200">International classes (Saturday)</td>
+                                <td class="py-3 px-4 border-b border-gray-200">6:00 am UK time</td>
+                                <td class="py-3 px-4 border-b border-gray-200">Yoga class</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">New class planned:</h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left">
+                        <thead>
+                            <tr class="bg-orange-50">
+                                <th class="py-3 px-4 font-bold text-orange-800 rounded-tl-lg">Days</th>
+                                <th class="py-3 px-4 font-bold text-orange-800">Time (IST)</th>
+                                <th class="py-3 px-4 font-bold text-orange-800 rounded-tr-lg">Class Type</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-3 px-4">Mon-Tues-Wed-Thu-Fri</td>
+                                <td class="py-3 px-4">5:00 - 6:00 pm</td>
+                                <td class="py-3 px-4">Mixed format class*</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="text-sm mt-4 text-gray-600">*Mixed format class includes Cardio, Core Strengthening, Yoga, Pranayama, and Thera-band exercises. New classes are subject to the availability of 6-8 students.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 md:py-24 bg-gradient-to-br from-orange-50 to-red-100 fade-in">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-red-600 mb-2">Testimonials from Co-Yogis</h2>
+                <p class="text-xl text-gray-600">The profound impact of Radha's teachings</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-orange-200 transform hover:scale-105 transition-transform duration-300">
+                    <p class="text-gray-700 italic text-center mb-4">
+                        "From bedridden to walking stick to slow Yoga doer to runner, my improvement is tremendous and people who have seen me going through these are wonder-struck."
+                    </p>
+                    <p class="font-bold text-center text-orange-600">- Padma Nagesh</p>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-red-200 transform hover:scale-105 transition-transform duration-300">
+                    <p class="text-gray-700 italic text-center mb-4">
+                        "She has always been a good leader who leads from the front. She fights our weaknesses with us and makes it her battle as well."
+                    </p>
+                    <p class="font-bold text-center text-red-600">- Anupama Shetty</p>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-yellow-200 transform hover:scale-105 transition-transform duration-300">
+                    <p class="text-gray-700 italic text-center mb-4">
+                        "It felt like surrendering to a mentor who was going to challenge my fears. Just like a godmother, she prepared my mind and body from inception to reality."
+                    </p>
+                    <p class="font-bold text-center text-yellow-600">- Sreepriya</p>
+                </div>
+                <!-- Testimonial 4 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-orange-200 transform hover:scale-105 transition-transform duration-300">
+                    <p class="text-gray-700 italic text-center mb-4">
+                        "I am happy to take things as they come, thanks to Radha. Today, my health vitals and weight are all good, thanks to Radha."
+                    </p>
+                    <p class="font-bold text-center text-orange-600">- Shefali Bansal</p>
+                </div>
+                <!-- Testimonial 5 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-red-200 transform hover:scale-105 transition-transform duration-300">
+                    <p class="text-gray-700 italic text-center mb-4">
+                        "I've known Radha Aunty (or Shobs, as I call her) since I was in school. She was first introduced to me as my mother's friend and trainer, but she's grown to be so much more in my life. My aunt, teacher, friend and most importantly, someone I call my own."
+                    </p>
+                    <p class="font-bold text-center text-red-600">- Ameya Thachappilly</p>
+                </div>
+                <!-- Testimonial 6 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-yellow-200 transform hover:scale-105 transition-transform duration-300">
+                    <p class="text-gray-700 italic text-center mb-4">
+                        "She is not a teacher, she is a Guru for all of us, and she cares for all of us. I wish God would give more energy and power to Radha to help students like me."
+                    </p>
+                    <p class="font-bold text-center text-yellow-600">- Devikala Thangaraj</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-gradient-to-br from-orange-400 via-red-500 to-yellow-500 text-white fade-in">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Interested? Opt in for a Demo Class!</h2>
+            <p class="text-lg md:text-xl font-light mb-8">
+                Take the first step towards a healthier, happier you.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
+                <div class="flex items-center space-x-3">
+                    <a href="tel/Whatsapp:+919880893366" class="flex items-center bg-white text-orange-600 font-bold py-3 px-6 rounded-full shadow-lg hover:bg-orange-100 transition duration-300">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-1a11.05 11.05 0 01-10-10V3z"></path>
+                        </svg>
+                       Call Me
+                    </a>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <a href="mailto:shobnas.radha@gmail.com" class="flex items-center bg-white text-orange-600 font-bold py-3 px-6 rounded-full shadow-lg hover:bg-orange-100 transition duration-300">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                        </svg>
+                        Email Me
+                    </a>
+                </div>
+            </div>
+            <a href="#schedule" class="mt-6 md:mt-8 inline-block text-white border-2 border-white font-medium py-2 px-6 rounded-full hover:bg-white hover:bg-opacity-20 transition duration-300">
+                View Class Timings
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-6 text-center">
+        <p>&copy; 2025 Radha Srinivasan. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
 
