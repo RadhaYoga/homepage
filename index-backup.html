@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radha Srinivisan - Yoga Trainer</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            background-color: teal;
+            height: 100%;
+            width: 100%;
+            overflow: hidden; /* Prevent scrolling */
+        }
+        .full-screen-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            object-fit: contain; /* Ensures image covers the full screen */
+        }
+
+        /* Optimize for mobile screens */
+        @media (max-width: 768px) {
+            .full-screen-image {
+                object-fit: contain; /* Prevents excessive cropping */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img src="Radha-homepage.png" alt="Details about my classes" class="full-screen-image">
+</body>
+</html>
